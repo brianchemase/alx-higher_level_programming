@@ -4,6 +4,7 @@
 
 def text_indentation(text):
     """prints 2 new line after each . ? or : charachter in a string
+
     Args:
         text(str): the text to perform the operation on
     """
