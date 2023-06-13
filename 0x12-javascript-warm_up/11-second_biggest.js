@@ -1,8 +1,12 @@
 #!/usr/bin/node
-let nextMax = 0;
+
 const args = process.argv.slice(2);
+let nextMax = 0;
+
 if (args.length > 1) {
-  args.sort();
-  nextMax = args[args.length - 2];
+  const integers = args.map(Number);
+  integers.sort((a, b) => b - a);
+  nextMax = integers[1];
 }
+
 console.log(nextMax);
